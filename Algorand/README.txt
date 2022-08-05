@@ -44,3 +44,26 @@ Algorand Interview Questions
 	output = 2
 	friends_from=[2,3,5,1] friends_to=[1,6,1,7]
 	output = -1
+
+03/08/2022:
+4. Rate Limiter: Design and implement a rate limiter where a server is allowed to accept only 3 request per client per second at
+   any given time. Execute and write the test-case for this.
+
+5. Implement a Linked-List that has following function:
+	a. push(string x) void - Insert the string in the front of the linked list
+	b. pop() string - Returns the front of the data and removes that data from Linked List
+	c. empty() bool - Check if the bool is empty or not
+	d. valid() bool - Check if the linked list is tampered or not. If tampered, returns false.
+	e. tamper(int pos, string x) void - Update the data in a certain index in a list.
+   Condition : DO NOT USE ANY EXISTING DATA STRUCTURE.
+	Example: LinkedList l;
+	l.push("100") : 100->null
+	l.push("200") : 200->100->null
+	l.push("300") : 300->200->100->null
+	l.pop() : Output = 300
+	l.empty() : false
+	l.valid() : true
+	l.tamper(2,"100") 
+	l.valid() : true
+	l.tamper(2,"300")
+	l.valid() : false
