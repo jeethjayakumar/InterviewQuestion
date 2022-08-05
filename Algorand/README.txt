@@ -48,6 +48,9 @@ Algorand Interview Questions
 03/08/2022:
 4. Rate Limiter: Design and implement a rate limiter where a server is allowed to accept only 3 request per client per second at
    any given time. Execute and write the test-case for this.
+   RateLimiter should return true if it accepts client's request, else false if it false any of the above conditions
+	Client ID 1: 100ms 200ms 300ms 400ms ... 1100ms 
+	RateLimiter:  1	   1	 1	0	  1
 
 5. Implement a Linked-List that has following function:
 	a. push(string x) void - Insert the string in the front of the linked list
